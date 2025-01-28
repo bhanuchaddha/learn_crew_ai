@@ -1,0 +1,52 @@
+{
+    "products": [
+      {
+        "product_id": 101,
+        "product_name": "Wireless Mouse",
+        "category": "Electronics",
+        "price": 29.99,
+        "stock": 150,
+        "description": "A smooth and responsive wireless mouse."
+      },
+      {
+        "product_id": 102,
+        "product_name": "Bluetooth Headphones",
+        "category": "Electronics",
+        "price": 49.99,
+        "stock": 75,
+        "description": "High-quality sound with noise cancellation."
+      },
+      {
+        "product_id": 103,
+        "product_name": "LED Monitor",
+        "category": "Electronics",
+        "price": 199.99,
+        "stock": 50,
+        "description": "27-inch 4K LED monitor for stunning visuals."
+      },
+      {
+        "product_id": 201,
+        "product_name": "Running Shoes",
+        "category": "Footwear",
+        "price": 79.99,
+        "stock": 100,
+        "description": "Comfortable running shoes suitable for all terrains."
+      },
+      {
+        "product_id": 202,
+        "product_name": "Leather Wallet",
+        "category": "Accessories",
+        "price": 39.99,
+        "stock": 200,
+        "description": "Genuine leather wallet with multiple compartments."
+      },
+      {
+        "product_id": 203,
+        "product_name": "Sunglasses",
+        "category": "Accessories",
+        "price": 19.99,
+        "stock": 300,
+        "description": "Stylish sunglasses for UV protection."
+      }
+    ]
+  }

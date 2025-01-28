@@ -1,0 +1,42 @@
+greet_task:
+  name: GreetTask
+  description: >
+    Generate a greeting (maximum {max_sentences} sentences) that includes:
+    
+    1. A brief introduction of yourself as a representative from {greeter_country}
+    2. A greeting in {greeter_country}'s language about {topic} in the year {year}
+
+    The greeting should:
+    1. Start with "I am [role] from {greeter_country}..."
+    2. Use {greeter_country}'s primary language
+    3. Include references to {topic}
+    4. Ensure all references are historically accurate to {year}
+    5. Not exceed {max_sentences} sentences total
+  expected_output: >
+    A structured response with:
+    - Self-introduction (1 sentence)
+    - Greeting in {greeter_country}'s language
+    - Discussion of {topic} (remaining sentences)
+    - Total length: {max_sentences} sentences maximum
+
+
+reply_task:
+  name: ReplyTask
+  description: >
+    Generate a response (maximum {max_sentences} sentences) to the exact greeting received:
+    
+    Given greeting: [Previous Agent's Output]
+
+    Your response should:
+    1. Start with "I am [role] from {replier_country}..."
+    2. Directly acknowledge specific points from the greeting
+    3. Use the same language as the greeting
+    4. Include {replier_country}'s perspective on the mentioned aspects of {topic}
+    5. Not exceed {max_sentences} sentences total
+  expected_output: >
+    A structured response with:
+    - Self-introduction (1 sentence)
+    - Direct acknowledgment of greeting
+    - Response to specific points raised
+    - {replier_country}'s perspective
+    - Total length: {max_sentences} sentences maximum
